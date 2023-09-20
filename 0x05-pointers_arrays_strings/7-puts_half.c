@@ -1,23 +1,24 @@
 #include "main.h"
 
 /**
- * print_array - a function tgat printsof elements of array
- * @a: array name
- * @n: is the number of elements of the array to be printed
- * Return: a and n inputs
+ * puts_half - function name
+ * @str: function parameter
  */
 
-void print_array(int *a, int n)
+void puts_half(char *str)
 {
-	int i;
+int i;
+int n;
+int count = 0;
 
-	for (i = 0; i < (n - 1); i++)
-	{
-		printf("%d, ", a[i]);
-	}
-		if (i == (n - 1))
-		{
-			printf("%d", a[n - 1]);
-		}
-			printf("\n");
+for (i = 0; str[i] != '\0'; i++)
+{
+	count++;
+}
+	n = (count - 1) / 2;
+for (i = n + 1; str[i] != '\0'; i++)
+{
+	_putchar(str[i]);
+}
+	_putchar('\n');
 }
