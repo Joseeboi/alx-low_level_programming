@@ -1,6 +1,8 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
- * binary_to_unit - a program that convert binary numbers
+ * binary_to_uint - a program that convert binary numbers
  * to intergers/decimal numbers
  *
  * @b: a character pointer to a string containing the
@@ -8,7 +10,7 @@
  *
  * Return: the converted decimal (outpuit)
 */
-unsigned int binary_to_unit(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
 	unsigned int len, i, j, sum, pow;
 	int base;
