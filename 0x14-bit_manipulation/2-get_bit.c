@@ -3,8 +3,9 @@
 /**
  * git_bit - get the value of a bit at a given index
  * @index: the index of the bit to be gotten
- * @n: the number to check the value of
- * Return: interger 1 or 0
+ * @n: the unsigned long int number from which to
+ *	extract the bit
+ * Return: integer 1 or 0
 */
 int get_bit(unsigned long int n, unsigned int index)
 {
