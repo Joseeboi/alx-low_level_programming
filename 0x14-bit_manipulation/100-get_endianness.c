@@ -1,10 +1,10 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * get_endianness - function to check the endianness
  * of the system
  *
- * Return: 0 and 1 if the system is big/little endian
+ * Return: 0 if the system is big, 1 if little endian
  *
 */
 
