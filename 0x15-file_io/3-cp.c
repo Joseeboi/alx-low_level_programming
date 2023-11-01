@@ -3,8 +3,8 @@
 
 /**
  * error_file - check if files can be opened
- * @file_from: intial file to copy from and to check
- * @file_to: destination file to copy to
+ * @file_from: file_from
+ * @file_to: file_to
  * @argv: arguments vector
  * Return: no return.
  */
@@ -23,8 +23,8 @@ void error_file(int file_from, int file_to, char *argv[])
 }
 
 /**
- * main - copy content of a file from one to another
- * @argc: argument count
+ * main - check the code for holberton school student
+ * @argc: number of arguments
  * @argv: argument vector
  * Return: 0 on success
  */
@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
 		if (nchars == -1)
 			error_file(-1, 0, argv);
 		nwr = write(file_to, buf, nchars);
-			if (nwr == -1)
+		if (nwr == -1)
 			error_file(0, -1, argv);
 	}
 
