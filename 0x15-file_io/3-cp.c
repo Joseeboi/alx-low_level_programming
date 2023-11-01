@@ -3,8 +3,8 @@
 
 /**
  * error_file - check if files can be opened
- * @file_from: file_from
- * @file_to: file_to
+ * @file_from: intial file to copy from and to check
+ * @file_to: destination file to copy to
  * @argv: arguments vector
  * Return: no return.
  */
@@ -23,7 +23,7 @@ void error_file(int file_from, int file_to, char *argv[])
 }
 
 /**
- * main - check the code for holberton school students
+ * main - copy content of a file from one to another
  * @argc: argument count
  * @argv: argument vector
  * Return: 0 on success
